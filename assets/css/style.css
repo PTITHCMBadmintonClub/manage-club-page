@@ -1,0 +1,343 @@
+/*------Header------*/
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 5 !important;
+}
+
+.header .header__navigation {
+    width: 100%;
+    min-height: 50px;
+    height: 70px;
+    background-color: var(--more-dark-blue);
+    padding-left: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: solid 1px #25347e;
+}
+
+.header__navigation .header__navigation--logo {
+    float: left;
+}
+
+.header__navigation .header__navigation--list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header__navigation--list .header__navigation--item {
+    display: inline-block;
+}
+
+.header__navigation .header__navigation--logo,
+.header__navigation .header__navigation--list a {
+    font-size: 1.6rem;
+    color: var(--white-text);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 0 10px;
+    transition: background-color ease 0.3s;
+}
+
+.header__navigation .header__navigation--logo {
+    padding: 0;
+    margin-right: 100px;
+}
+
+.header__navigation .header__navigation--logo img {
+    width: 1.6rem;
+}
+
+.header__navigation>ul>li>a:hover {
+    background-color: var(--fade-mist-color);
+}
+
+.header__navigation .header__navigation--menu {
+    display: none;
+}
+
+/*------Container------*/
+.container .container__item {
+    height: auto;
+    padding-left: 11vw;
+    padding-right: 11vw;
+    width: 100%;
+    min-height: 748px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/*------1. Home------*/
+.container #home {
+    background-color: var(--dark-blue);
+    padding-top: 170px;
+    padding-bottom: 210px;
+    justify-content: space-between;
+}
+
+.container #home>div {
+    display: block;
+    width: 50%;
+}
+
+.container #home .home__content--title {
+    font-size: var(--big-font-size);
+    color: var(--white-text);
+    padding-bottom: 50px;
+}
+
+.container #home .home__content--desc {
+    font-size: var(--desc-font-size);
+    color: var(--light-grey);
+}
+
+.container #home .home__image {
+    padding-left: 150px;
+    padding-right: 100px;
+}
+
+.container #home .home__image>img {
+    width: 300px;
+    border: solid 2px var(--light-blue);
+    border-radius: 160px;
+}
+
+/*------2. Meeting Location------*/
+.container #meeting-location {
+    background-color: var(--fade-white-text);
+    padding-top: 80px;
+    padding-bottom: 50px;
+    padding-left: 16vw;
+    padding-right: 16vw;
+}
+.container #meeting-location .grid {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: initial;
+}
+.container #meeting-location .grid-left,
+.container #meeting-location .grid-right {
+    padding: 40px;
+}
+.container #meeting-location .grid-left,
+.container #meeting-location .grid-right {
+    width: 50%;
+    justify-self: center;
+}
+.container #meeting-location .grid-left__content {
+    display: block;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.container #meeting-location .grid-left__content--title {
+    color: var(--brown-text);
+    font-size: var(--medium-font-size);
+}
+.container #meeting-location .grid-left__content--sub {
+    padding: 10px 0;
+    color: var(--fade-dark-blue);
+    font-size: var(--desc-font-size);
+    display: block;
+}
+.container #meeting-location .grid-left__content--sub > a {
+    color: var(--black-text);
+    font-size: 1.8rem;
+    font-weight: 100;
+}
+
+.container #meeting-location .hover-space {
+    width: 28vw;
+    height: auto;
+    overflow: hidden;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    height: auto;
+    border-radius: 16px;
+    background-color: transparent;
+}
+.container #meeting-location .grid-right__image img,
+.container #meeting-location .grid-left__image img {
+    margin-bottom: -4px;
+    width: 100%;
+    transition: opacity ease 0.35s;
+}
+.container #meeting-location .hover-space:hover {
+    animation: smoothHover ease 0.15s forwards;
+    opacity: 0.9;
+}
+.container #meeting-location .hover-space i.fa-arrow-right {
+    padding-left: 4px;
+    transition: padding-left ease 0.5s;
+}
+.container #meeting-location .hover-space:hover i.fa-arrow-right {
+    padding-left: 20px!important;
+}
+
+.container #meeting-location .hover-space__content {
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: var(--white-text);
+}
+
+.container #meeting-location .hover-space__content h4 {
+    font-size: 2rem;
+    padding: 4px;
+    text-shadow: 0 0 5px black;
+}
+.container #meeting-location .hover-space__content p {
+    font-size: 1.6rem;
+    padding: 4px;
+    text-shadow: 0 0 10px black;
+}
+/*------3. Connect------*/
+.container #connect {
+    background-color: var(--dark-blue);
+    padding: 200px 14vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.container #connect .connect__image {
+    width: 47%;
+}
+.container #connect .connect__image .page-img {
+    border-radius: 16px;
+    width: 100%;
+}
+.container #connect .connect__content {
+    padding: 12px 0;
+    color: var(--white-text);
+    width: 47%;
+}
+.container #connect .connect__content > .title {
+    font-size: var(--medium-font-size);
+    color: var(--white-text);
+    padding: 12px 0;
+}
+.container #connect .connect__content > .desc {
+    font-size: var(--desc-font-size);
+    color: var(--light-grey);
+    padding: 12px 0;
+}
+.container #connect .connect__content--btn {
+    width: 100%;
+}
+.container #connect .connect__content--btn__wrapper > a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6rem;
+    padding: 14px 24px;
+    margin: 14px 0;
+    color: var(--dark-blue);
+    background-color: var(--white-text);
+    border-radius: 4px;
+    transition: all ease 0.2s;
+    text-align: center;
+    min-width: 170px;
+}
+.container #connect .connect__content--btn .fa-arrow-right {
+    padding-left: 10px;
+    font-size: 1.2rem;
+}
+.container #connect .connect__content--btn a:hover {
+    transform: scale(1.1);
+    background-color: var(--light-green);
+    color: white;
+}
+/*------4. Register------*/
+.container #register {
+    background-color: var(--fade-white-text);
+    min-height: 548px;
+    padding-top: 150px;
+    display: block;
+}
+.container #register .register__image {
+    width: 360px;
+    border-radius: 4px;
+    margin-left: 70px;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.5);
+    float: left;
+}
+.container #register .register__container {
+    float: left;
+    margin-right: 70px;
+    width: 45%;
+}
+.container #register .register__container--content .title {
+    font-size: var(--medium-font-size);
+    color: var(--brown-text);
+    padding-bottom: 10px;
+    width: 100%;
+}
+.container #register .register__container--content .desc {
+    font-size: var(--desc-font-size);
+    width: 100%;
+    color: var(--black-text);
+}
+.container #register .register__container--regis-btn {
+    margin: 20px 0;
+}
+.container #register .register__container--regis-btn > a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    display: inline-block;
+    background-color: var(--dark-blue);
+    color: var(--white-text);
+    padding: 14px 24px;
+    border-radius: 4px;
+    transition: all ease 0.3s;
+}
+.container #register .register__container--regis-btn > a:hover {
+    background-color: var(--light-green);
+    transform: scale(1.1);
+}
+/*------Down button------*/
+.container .container__item .down-btn {
+    display: block;
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+    text-decoration: none;
+    padding: 4px;
+    width: auto;
+    border: solid 3px var(--light-blue);
+    border-radius: 8px;
+}
+
+.container .container__item .down-btn>img {
+    width: 36px;
+}
+.container #connect .down-btn:hover,
+.container #home .down-btn:hover {
+    background-color: var(--fade-mist-color);
+}
+.container #meeting-location .down-btn:hover {
+    background-color: var(--dark-blue);
+}
+.footer {
+    background-color: var(--dark-blue);
+    width: 100%;
+    min-height: 70px;
+    padding-top: 20px;
+}
+.footer > p {
+    padding: 1px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--white-text);
+}
+.footer > p > a {
+    color: var(--white-text);
+}

@@ -1,0 +1,42 @@
+:root {
+    --dark-blue: #273353;
+    --more-dark-blue: #0d2d47;
+    --fade-dark-blue: #273353;
+    --light-blue: #0080ff;
+    --light-green: #1fc1c3;
+    --black-text: #1E2329;
+    --brown-text: #3A3A3A;
+    --white-text: #fffffff9;
+    --light-grey: #95a2b1;
+    --light-orange: #efc480;
+    --fade-white-text: #f3f1ef;
+    --fade-mist-color: rgba(255, 255, 255, 0.08);
+    --big-font-size: 7.2rem;
+    --medium-font-size: 3.2rem;
+    --desc-font-size: 2.4rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 65%;
+    font-family: "Sharp Sans No1", Sans-serif;
+    scroll-behavior: smooth;
+}
+.showNavigation {
+    display: flex!important;
+}
+
+@keyframes smoothHover {
+    from {
+        box-shadow: 0 0 0 transparent;
+    }
+    to {
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.9);
+    }
+}
