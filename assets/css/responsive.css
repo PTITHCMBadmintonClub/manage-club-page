@@ -107,6 +107,7 @@
         padding-left: 12vw;
         padding-right: 12vw;
     }
+
     .main .container .container__item {
         display: block !important;
         text-align: center;
@@ -128,6 +129,7 @@
     .main .container #meeting-location .grid .hover-space .hover-space__content .title {
         font-size: 2.6rem;
     }
+
     .main .container #meeting-location .grid .hover-space .hover-space__content .desc {
         font-size: 2.4rem;
     }
@@ -147,6 +149,10 @@
         width: 100%;
     }
 
+    .main .container #connect .connect__content>.desc {
+        font-size: 2.4rem;
+    }
+
     .main .container #connect .connect__content--btn {
         display: flex;
         justify-content: space-around;
@@ -154,6 +160,8 @@
 
     .main .container #connect .connect__content--btn__wrapper>a {
         font-size: var(--desc-font-size);
+        display: block;
+        padding: 20px 30px;
     }
 
     /*------4. Register------*/
@@ -169,6 +177,8 @@
 
     .main .container #register .register__container--regis-btn>a {
         font-size: var(--desc-font-size);
+        display: inline-block;
+        padding: 20px 30px;
     }
 
     /*------Footer------*/
@@ -179,5 +189,92 @@
     .main .footer {
         padding-top: 40px;
         margin-top: -30px;
+    }
+
+    /*------Device notification------*/
+    .main .device-notif {
+        transform: scale(1)!important;
+        display: block;
+        position: fixed;
+        z-index: 10;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .main .device-notif-block {
+        position: absolute;
+        z-index: 11;
+        width: 85vw;
+        height: auto;
+        padding: 5vw 12vw;
+        border-radius: 20px;
+        background-color: #112b44;
+        margin: 7.5vw;
+        top: 20vh;
+    }
+
+    .main .device-notif-block__title,
+    .main .device-notif-block__desc>p,
+    .main .device-notif-block__btn>a {
+        font-size: 3.4rem;
+        color: #e8e8e8;
+        line-height: 45px;
+    }
+
+    .main .device-notif-block__title {
+        font-size: 3rem;
+    }
+
+    .main .device-notif-block__desc {
+        padding: 1rem 0 2rem;
+    }
+
+    .main .device-notif-block__desc>p {
+        font-weight: 100;
+    }
+
+    .main .device-notif-block__btn {
+        text-align: center;
+    }
+
+    .main .device-notif-block__btn>a {
+        display: block;
+        color: rgb(45, 45, 45);
+        margin: 1rem 0;
+        background-color: #e3ffb8;
+        padding: 2rem;
+        border-radius: 5px;
+        transition: transform ease 0.3s;
+    }
+
+    .main .device-notif-block__btn > a:hover {
+        background-color: var(--light-green);
+        transform: scale(1.1);
+    }
+
+    .main .device-notif-block__icon {
+        position: absolute;
+        top: 4.5rem;
+        left: 3.5rem;
+    }
+
+    .main .device-notif-block__icon>i {
+        font-size: 5rem;
+        color: #e3ffb8;
+        padding: 10px;
+    }
+
+    .main .device-notif-block__close-icon {
+        position: absolute;
+        right: 4rem;
+        top: 4rem;
+        padding: 10px;
+    }
+
+    .main .device-notif-block__close-icon>i {
+        font-size: 4rem;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.2);
     }
 }

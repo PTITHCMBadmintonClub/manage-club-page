@@ -1,3 +1,6 @@
+.device-notif {
+    display: none;
+}
 /*------Header------*/
 .header {
     position: fixed;
@@ -321,7 +324,7 @@
 }
 .container #register .register__container--regis-btn > a:hover {
     background-color: var(--light-green);
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 /*------Down button------*/
 .container .container__item .down-btn {

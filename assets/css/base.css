@@ -1,5 +1,4 @@
 :root {
-    /* --dark-blue: #273353; */
     --dark-blue: #1f436b;
     --more-dark-blue: #0d2d47;
     --fade-dark-blue: #273353;
@@ -28,6 +27,7 @@ html {
     font-size: 65%;
     font-family: "Sharp Sans No1", Sans-serif;
     scroll-behavior: smooth;
+    min-width: 900px;
 }
 .showNavigation {
     display: flex!important;

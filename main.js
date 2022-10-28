@@ -8,6 +8,12 @@ function start() {
     const nav = $(".header__navigation");
     const homeDownBtn = $(".home__button .down-btn");
     const downNotifBtn = $(".home__button .home__button--guide");
+    const finishNotifBtn = $(".main .device-notif-block__btn a");
+    const closeNotifBtn = $(".main .device-notif-block__close-icon");
+    
+    function closeNotification(e) {
+        $(".main .device-notif").style.display = "none";
+    }
 
     menu.onclick = function toggleshowNavigation() {
         navBlock.classList.toggle("showNavigation");
@@ -24,5 +30,8 @@ function start() {
     homeDownBtn.onclick = function () {
         downNotifBtn.style.opacity = "0";
     }
+
+    finishNotifBtn.onclick = closeNotification;
+    closeNotifBtn.onclick = closeNotification;
 }
 start();
