@@ -46,8 +46,14 @@ html {
     0% {
         bottom: 200px;
     }
+    25% {
+        bottom: 185px;
+    }
     50% {
         bottom: 170px;
+    }
+    75% {
+        bottom: 185px;
     }
     100% {
         bottom: 200px;

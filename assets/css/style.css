@@ -114,7 +114,7 @@
     padding: 10px;
     border-radius: 5px;
     height: 40px;
-    animation: smoothClickNotif ease 1.5s infinite;
+    animation: smoothClickNotif ease 1.4s infinite;
     transition: opacity ease 0.4s;
 }
 .container #home .home__button .home__button--guide > p {
