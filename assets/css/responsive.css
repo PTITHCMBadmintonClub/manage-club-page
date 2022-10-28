@@ -98,6 +98,10 @@
         padding: 40px 0;
     }
 
+    .main .container #home .home__button .home__button--guide {
+        display: none;
+    }
+
     /*------2. Meeting Location------*/
     .main .container .container__item {
         display: block !important;
