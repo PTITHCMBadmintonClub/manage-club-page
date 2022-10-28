@@ -38,6 +38,15 @@ html {
         box-shadow: 0 0 0 transparent;
     }
     to {
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.9);
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.9);
+    }
+}
+
+@keyframes smoothClickNotif {
+    from {
+        bottom: 200px;
+    }
+    to {
+        bottom: 170px;
     }
 }
