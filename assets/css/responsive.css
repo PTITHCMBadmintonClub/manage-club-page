@@ -2,7 +2,7 @@
     :root {
         --big-font-size: 7.2rem;
         --medium-font-size: 3.8rem;
-        --desc-font-size: 2.2rem;
+        --desc-font-size: 2.9rem;
     }
 
     /*------Header------*/
@@ -103,6 +103,10 @@
     }
 
     /*------2. Meeting Location------*/
+    .main .container #meeting-location {
+        padding-left: 12vw;
+        padding-right: 12vw;
+    }
     .main .container .container__item {
         display: block !important;
         text-align: center;
@@ -121,8 +125,20 @@
         top: 70%;
     }
 
-    .main .container #meeting-location .grid-left__content--sub>a {
+    .main .container #meeting-location .grid .hover-space .hover-space__content .title {
+        font-size: 2.6rem;
+    }
+    .main .container #meeting-location .grid .hover-space .hover-space__content .desc {
         font-size: 2.4rem;
+    }
+
+    .main .container #meeting-location .grid-left__content--title>h2 {
+        font-size: 3.6rem;
+    }
+
+    .main .container #meeting-location .grid-left__content--sub>a {
+        font-size: 2.65rem;
+        font-weight: 500;
     }
 
     /*------3. Connect------*/
