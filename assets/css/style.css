@@ -357,7 +357,7 @@
 .footer > p {
     padding: 1px;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.2rem!important;
     color: var(--white-text);
 }
 .footer > p > a {
