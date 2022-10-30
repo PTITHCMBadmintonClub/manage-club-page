@@ -110,11 +110,10 @@
 }
 
 .container #home .home__button .home__button--guide {
-    margin-left: 35px;
+    right: 50px;
     position: absolute;
     text-align: center;
     bottom: 170px;
-    padding: 10px;
     border-radius: 5px;
     height: 40px;
     animation: smoothClickNotif ease 1.4s infinite;
