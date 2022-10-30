@@ -285,17 +285,19 @@
     min-height: 548px;
     padding-top: 150px;
     display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .container #register .register__image {
     width: 360px;
+    max-height: 320px!important;
     border-radius: 4px;
-    margin-left: 70px;
     box-shadow: 0 7px 7px rgba(0, 0, 0, 0.5);
-    float: left;
+    margin-right: 5vw;
 }
 .container #register .register__container {
     float: left;
-    margin-right: 70px;
     width: 45%;
 }
 .container #register .register__container--content .title {
